@@ -1,0 +1,294 @@
+
+/* *=============general properties=============== */
+
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+:root{
+    /* ! ########## fonts*/
+    --font-default:"Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-primary: "Amatic SC", sans-serif;
+    --font-secondary:'Inter',sans-serif;
+    
+    /* ? ########## Animation options */
+     --animation-duration: 400ms;
+     
+    /* * ########## colors*/
+     --color-default: #212529;
+     --color-secondary:#37373f;
+     --color-tertiary:#7f7f70;
+     --color-light-grey:#eee;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:var(--font-default) ;
+    color: var(--color-default);
+    
+}
+
+    /* عشان يحتفظوا بمميزات الإنلاين ويكونوا جمب بعض مش كل واحد سطر وكمان لو عايزة أديهم طول أو عرض براحتي */
+a,span{
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+img{
+    /* عشان لما أدي للديف اللي بيحتوي على صورة بوردر الصورة كمان تاخد نفس البوردر مش أرجع تاني أديها بوردر لوحدها */
+    display: block;
+    /* width: 100%; */ 
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--font-primary);
+}
+
+ul{
+    list-style: none ;
+}
+/* *============= end general properties=============== */
+
+/* *==========> repeated style==============*/
+
+.section-bg{
+    background-color: var(--color-light-grey);
+}
+
+.btn {
+    /* background-color: var();
+    color: white;
+    padding: 10px 20px;
+    border: none; */
+     
+}
+
+
+
+
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: white;
+     box-shadow: 0px 0px 15px 0px #dddfde;
+}
+
+.navbar h1{
+    font-size: 30px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.navbar .night{
+    background-color: black;
+    height: 30px;
+    width: 30px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 5px;
+}
+
+ .navbar ul{
+    /* background-color:antiquewhite; */
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+
+.navbar a{
+    -webkit-text-decoration:none ;
+            -webkit-text-decoration:none ;
+                    text-decoration: none;
+                    color:gray;
+                    font-size: 20px;
+                    font-weight: 500;
+}
+
+.navbar a:hover{
+    border-bottom:rgb(185, 18, 18) solid 2px ;
+}
+
+.navbar h1 span{
+    color: hsl( 0, 84%, 44% );
+}
+
+
+
+body:has(header:target) .home-link{
+    color: #000;
+    border-bottom:rgb(185, 18, 18) solid 2px ;
+}
+
+body:has(#chefs:target) .chefs-link{
+    color: #000;
+    border-bottom:rgb(185, 18, 18) solid 2px ;
+}
+
+.head-img img{
+    width: 100%;
+}
+
+.head-img{
+    -webkit-filter: drop-shadow(0px 0px 5px  black);
+    filter: drop-shadow(0px 0px 5px black);
+}
+
+header{
+    background-color: #ebeeec;
+    height:100vh ;
+    width: 100vw;
+    display: flex; 
+}
+
+.head-all{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2{
+    font-family:  var(--font-primary);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 70px;
+    color: #37373f;
+}
+
+header p{
+    font-size: 20px;
+    color: #37373f;
+    margin: 20px 0;
+    width: 80%;
+}
+
+header .btn{
+    background-color: rgb(185, 18, 18);
+    padding: 15px 40px;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    border-top-left-radius: 0px; 
+}
+
+.head-btn{
+    margin-top: 30px;
+}
+
+.head-btn a{
+    -webkit-text-decoration:none ;
+            -webkit-text-decoration:none ;
+                    text-decoration: none;
+                    font-size: 20px;
+}
+
+.head-btn .icon {
+    color: #37373f;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 100px;
+}
+
+
+
+
+/* ============================================================================about===================================================================== */
+
+.chefs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.chef-cont{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 0 30px 0;
+}
+
+.chefs h2{
+    font-family: "Amatic SC", sans-serif; 
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: #37373f;
+}
+
+.chefs h2 span{
+    color: rgb(185, 18, 18);
+    font-family: "Amatic SC", sans-serif; 
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+
+.chefs h3{
+    font-weight: 400;
+    color: gray;
+    font-size: 14px;
+}
+
+
+.chef-items{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+   margin-bottom:80px ;
+}
+
+.chef-items .item{
+    width: 30%;
+    /* border: #ebeeec solid 10px; */
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 0px rgb(221, 220, 220) ;
+    padding-bottom: 20px;
+    transition: transform .4s;
+}
+
+.chef-items .item:hover{
+    transform: scale(1.06);
+}
+
+.chef-items .item img{
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    
+}
+
+.chef-items .item h3{
+    color: #37373f;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.chef-items .item p{
+    margin-top: 10px;
+    color: gray;
+    font-size: 12px;
+    font-weight: 400;
+}
+}

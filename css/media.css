@@ -1,0 +1,240 @@
+/* :root{
+font-size: 14px;
+} */
+
+
+@media screen and (min-width:1400px){
+.container{
+    max-width: 1320px;
+}
+} 
+
+@media screen and (max-width:1400px){
+.container{
+    max-width: 1140px;
+}
+} 
+
+@media screen and (max-width:1200px){
+.container{
+    max-width: 960px;
+}
+} 
+
+@media screen and (max-width:992px){
+.container{
+    max-width:720px;
+}
+} 
+
+@media screen and (max-width:768px){
+.container{
+    max-width: 540px;
+} 
+}
+
+@media screen and (max-width:576px){
+.container{
+    max-width:100%;
+    padding-inline:15px;
+} 
+}
+
+
+@media screen and (min-width:1200px){
+header{
+    min-height: 100vh;
+    padding: 0px 60px;
+} 
+}
+
+@media screen and (max-width:990px){
+header .container{ 
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+}
+
+header .container > *{
+    width: 100%;
+}
+
+.head-cont{
+    margin-top: 40px;
+}
+
+.head-btn{
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.head-btn .btn{
+    border-radius: 100vh ;
+}
+}
+
+@media screen and (max-width:400px){
+.head-btn{
+    flex-direction: column;
+}
+}
+
+@media screen and (max-width:1200px){
+.menu-icon{
+    display: block;
+}
+    
+.navbar ul{
+    /* display: none; */
+    transform: translateX(100%);
+    position: absolute ;
+    top: 0;
+    right: 0;
+    z-index: 99999999999;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 300px; 
+    /* padding: 0px 10px;  */
+    /* gap: 0; */
+    height: 100%;
+    justify-content: flex-start;
+    padding-left: 10px;
+    
+}
+
+nav ul li.close-icon{
+    display: block;
+}
+
+nav ul li.close-icon a{
+    font-size: 20px;
+}
+
+.navbar a:hover::after{
+    width: 0%;
+}
+
+.mode{
+    display: flex;
+    gap: 15px;
+    /* justify-content: space-between; */
+    /* align-items: flex-start; */
+}
+}
+
+
+
+
+
+
+
+
+
+/* ===============================chefs============================ */
+
+
+    @media screen and (max-width:995px) {
+
+    
+    .chef-items .item{
+        width: calc((100% - (var(--gab)))/2 );
+    }}
+
+    @media screen and (max-width:767px) {
+    .chef-items .item{
+    width: 100%;
+    }}
+
+
+    /* ===============================gallery============================ */
+
+    @media screen and (max-width:1200px) {
+        .gallery .gallery-imgs{
+            height: 900px;
+        }
+    }
+    @media screen and (max-width:995px) {
+
+    
+        .gallery-imgs picture{
+            width: calc((100% - (var(--gab)))/2 );
+        }
+        
+        .gallery .gallery-imgs{
+        height: 1500px;
+    }
+    
+    .img1{
+        order: 0;
+    }
+    .img2{
+        order: 2;
+    }
+    .img3{
+        order: 4;
+    }
+    .img4{
+        order: 3;
+    }
+    .img5{
+        order: 1;
+    }
+    .img6{
+        order: 5;   
+    }
+    .img7{
+        order: 6;
+    }
+    }
+
+    @media screen and (max-width:766px) {
+        .gallery .gallery-imgs{
+            height: auto;
+            padding-bottom: 80px;
+        }
+
+        .gallery-imgs picture{
+            width: 100%;
+        }
+    }
+
+    /* ===============================contact============================ */
+
+    @media screen and (max-width:990px){
+        /* .contact form div{
+            flex-direction: column;
+        } */
+        
+        .contact form div input{
+            width: 100%;
+        }
+    }
+
+        @media screen and (max-width:766px) {
+        .contact-means > div {
+            width: 100%;
+            }}
+
+            /* ===============================footer============================ */
+
+
+@media screen and (max-width:1200px) {
+    footer :is(.about, .contact-detail) {
+        width: calc((100% - (var(--gap)))/2);
+        }
+
+        footer .subscription{
+            order: 1;
+            width: 100%;
+            margin-top: 10px;
+        }
+        }
+
+
+    @media screen and (max-width:766px) {
+        footer :is(.about, .contact-detail,.subscription) {
+            width: 100%;
+            order: 0;
+            }
+        }

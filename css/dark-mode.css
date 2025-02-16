@@ -1,0 +1,68 @@
+
+
+:root:has(.mode input:checked){
+    
+        /* ?########### Color*/
+        --color-default:#fff;
+        
+        --primary-hue:35;
+        --primary-saturation:85%;
+        --primary-lightness:40%;
+        /* --color-primary:hsl( var(--primary-hue), var(--primary-saturation), var(--primary-lightness)); */
+        
+        --hover-primary-bg:hsl( var(--primary-hue), var(--primary-saturation), calc( var(--primary-lightness) + 5%));
+        
+        --color-secondary:#fff;
+        --color-tertiary:#9f9f9f;
+        --light-hue:0;
+        --light-saturation:0%;
+        --light-lightness:9%;
+        --color-light:hsl(var(--light-hue),var(--light-saturation),var(--light-lightness));
+        --color-light-grey:#252525;
+        --color-icon-click:#fff;
+        
+        /*  !########## Fonts */
+        --font-default:"Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        --font-primary:'Amatic SC', sans-serif;
+        --font-secondary:'Inter', sans-serif;
+    
+        /* *########## Animation options */
+        --animation-duration:400ms;
+        /* background-color: #965757; */
+       
+}
+
+body:has(.mode input:checked){
+    
+    background-color: #202020;
+    
+    .light{
+        display: block; 
+    }
+
+    .dark{
+        display: none;
+    }  
+    
+    nav{
+        box-shadow: 0px 0px 15px 0px #202020;
+    }
+
+   .chef-items .item{
+        background-color:var(--color-light);
+    }
+
+    .chef-items .item-img::before{
+        background-image: url(../img/team-shape-dark.svg);
+    }
+   
+    
+    .contact{
+        background-color: #202020;
+    }
+    
+    .contact .contact-means >div{
+        background-color:var(--color-light);
+    }
+
+}
